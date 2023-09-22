@@ -5,38 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script src="calculator.js" ></script>
+    <script src="calculator.js" defer ></script>
     <title>Calculator</title>
 </head>
 <body>
     <div class="calculator">
-        <div class="display">Display</div>
+        <div id="container"></div>
         <div class="buttons">
             <div class="left">
                 <div class="misc">
-                    <div id="clickable" class="clear">AC</div>
-                    <div id="clickable" class="negation">neg</div>
-                    <div id="clickable" class="percent">%</div>
+                    <button id="clickable" class="clear">AC</button>
+                    <button id="clickable" class="negation">neg</button>
+                    <button id="clickable" class="percent">%</button>
                 </div>
                 <div class="digits">
-                    <div id="clickable" class="7">7</div>
-                    <div id="clickable" class="8">8</div>
-                    <div id="clickable" class="9">9</div>
-                    <div id="clickable" class="4">4</div>
-                    <div id="clickable" class="5">5</div>
-                    <div id="clickable" class="6">6</div>
-                    <div id="clickable" class="1">1</div>
-                    <div id="clickable" class="2">2</div>
-                    <div id="clickable" class="3">3</div>
-                    <div id="clickable" class="0">0</div>
+                    <button onclick="inputTest('7')" id="clickable" class="seven">7</button>
+                    <button onclick="inputTest(8)" id="clickable" class="8">8</button>
+                    <button onclick="inputTest(9)" id="clickable" class="9">9</button>
+                    <button onclick="inputTest(4)" id="clickable" class="4">4</button>
+                    <button onclick="inputTest(5)" id="clickable" class="5">5</button>
+                    <button onclick="inputTest(6)" id="clickable" class="6">6</button>
+                    <button onclick="inputTest(1)" id="clickable" class="1">1</button>
+                    <button onclick="inputTest(2)" id="clickable" class="2">2</button>
+                    <button onclick="inputTest(3)" id="clickable" class="3">3</button>
+                    <button onclick="inputTest(0)" id="clickable" class="0">0</button>
                 </div>
             </div>
             <div class="operators">
-                <div id="clickable" class="divide">/</div>
-                <div id="clickable" class="multiply">*</div>
-                <div id="clickable" class="subtract">-</div>
-                <div id="clickable" class="add">+</div>
-                <div id="clickable" class="equals">=</div></div>
+                <button id="clickable" class="divide">/</button>
+                <button id="clickable" class="multiply">*</button>
+                <button id="clickable" class="subtract">-</button>
+                <button id="clickable" class="add">+</button>
+                <button id="clickable" class="equals">=</button>
+            </div>
         </div>
     </div>
 </body>

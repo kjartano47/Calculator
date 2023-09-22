@@ -3,11 +3,16 @@ body{
     justify-content: center;
 
 }
-.display{
+#container{
+    display: flex;
+    
+    justify-content: flex-end;
+    color: white;
     background-color: black;
-    padding-top: 60px;
+    padding: 20px;
     border: 1px solid black;
     border-radius: 3px;
+    font-size: 62px;
 }
 .calculator{
     width: 400px;
@@ -50,5 +55,9 @@ body{
     vertical-align: baseline;
     background-color: #585353;
     border-radius:50px;
-
+    margin: 2.5px;
+}
+#clickable:hover{
+    background-color: #645d5d;
+    font-size: 34px;
 }
