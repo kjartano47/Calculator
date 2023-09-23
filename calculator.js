@@ -38,6 +38,10 @@ const container = document.querySelector("#container");
 let arr = [];
 let inputTest = (input) => {
 	arr.push(input);
+	if (input == "$") {
+		arr = [];
+		content.textContent = 0;
+	}
 	for (let i = 0; i < arr.length; i++) {
 		arr.join("^");
 		content.textContent = `${arr.join("")}`;
